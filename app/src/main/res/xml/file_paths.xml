@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+      Exports we write to share through the system share-sheet via a content://
+      FileProvider URI. Lives in the app's cache so the OS can reclaim space.
+    -->
+    <cache-path name="veilix-exports" path="exports/" />
+    <!-- Camera captures land here as PNG; cleaned up by OS cache eviction. -->
+    <cache-path name="veilix-captures" path="captures/" />
+</paths>

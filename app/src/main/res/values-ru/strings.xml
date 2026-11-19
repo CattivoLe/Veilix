@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Veilix</string>
+
+    <string name="picker_choose">Выберите изображение</string>
+    <string name="picker_from_gallery">Фото из галереи</string>
+    <string name="picker_take_photo">Сделать снимок</string>
+    <string name="picker_load_file">Загрузить из файлов</string>
+
+    <string name="settings_title">Параметры</string>
+    <string name="settings_encryption">Шифрование</string>
+    <string name="settings_compression">Сжатие</string>
+    <string name="settings_image_size">Размер картинки</string>
+
+    <string name="enc_none">Без шифрования</string>
+    <string name="enc_aes">AES-256-GCM</string>
+    <string name="enc_chacha">ChaCha20-Poly1305</string>
+    <string name="comp_none">Без сжатия</string>
+    <string name="comp_zlib">Zlib (Deflate)</string>
+    <string name="comp_lzfse">LZFSE</string>
+    <string name="comp_lzma">LZMA</string>
+    <string name="size_compact">Компактно (1024)</string>
+    <string name="size_standard">Стандарт (2048)</string>
+    <string name="size_large">Большая (4096)</string>
+    <string name="size_original">Оригинал</string>
+
+    <string name="field_password">Пароль</string>
+    <string name="field_message">Введите скрытый текст</string>
+
+    <string name="action_embed_text">Внедрить текст</string>
+    <string name="action_embed_file">Внедрить файл</string>
+    <string name="action_decrypt">Расшифровать</string>
+    <string name="action_export">Экспортировать изображение</string>
+    <string name="action_attach">Прикрепить файл</string>
+    <string name="action_save_file">Сохранить файл</string>
+    <string name="action_show_password">Показать пароль</string>
+    <string name="action_hide_password">Скрыть пароль</string>
+    <string name="action_copy_password">Скопировать пароль</string>
+    <string name="action_copy_result">Скопировать результат</string>
+    <string name="action_clear_result">Очистить результат</string>
+    <string name="action_clear_message">Очистить сообщение</string>
+    <string name="action_remove_attachment">Удалить вложение</string>
+
+    <string name="status_processing">Обработка…</string>
+    <string name="status_analyzing">Анализ изображения…</string>
+    <string name="status_embedding">Внедрение данных…</string>
+    <string name="status_extracting">Извлечение данных…</string>
+    <string name="status_done_embedded">Готово. Данные внедрены.</string>
+    <string name="status_enter_password">Введите пароль и нажмите «Расшифровать».</string>
+    <string name="status_saved_to_gallery">Сохранено в галерею.</string>
+    <string name="status_saved_to_downloads">Сохранено в Загрузки/Veilix.</string>
+    <string name="status_hidden_detected">Обнаружены скрытые данные</string>
+
+    <string name="result_label">Результат:</string>
+
+    <string name="capacity_used">Занято %1$s из %2$s</string>
+    <string name="capacity_exceeded">Превышен лимит</string>
+    <string name="capacity_remaining_chars">≈ %1$d символов осталось</string>
+
+    <string name="strength_weak">Слабый</string>
+    <string name="strength_fair">Средний</string>
+    <string name="strength_strong">Сильный</string>
+    <string name="strength_excellent">Отличный</string>
+
+    <string name="error_image_process">Не удалось обработать изображение</string>
+    <string name="error_message_too_large">Содержимое слишком большое для этого изображения</string>
+    <string name="error_decode">Не удалось декодировать данные</string>
+    <string name="error_no_hidden_data">В изображении нет скрытых данных</string>
+    <string name="error_header">Заголовок повреждён</string>
+    <string name="error_unsupported_version">Неподдерживаемая версия формата: %1$d</string>
+    <string name="error_unsupported_algorithm">Неподдерживаемый алгоритм</string>
+    <string name="error_wrong_password">Неверный пароль или данные повреждены</string>
+    <string name="error_password_required">Введите пароль или отключите шифрование</string>
+    <string name="error_compression">Не удалось сжать данные</string>
+    <string name="error_decompression">Не удалось распаковать данные</string>
+    <string name="error_encryption">Не удалось зашифровать данные</string>
+    <string name="error_empty">Нечего внедрять</string>
+    <string name="error_png_export">Не удалось подготовить изображение к экспорту</string>
+    <string name="error_camera_denied">Доступ к камере отключён. Включите его в Настройках.</string>
+    <string name="error_lockout">Слишком много попыток. Подождите %1$s.</string>
+
+    <string name="info_more">Подробнее</string>
+    <string name="info_close">Закрыть</string>
+    <string name="info_encryption_summary">Защищает скрытые данные от чтения без пароля. Без него любой, кто откроет картинку в Veilix, сможет извлечь содержимое.</string>
+    <string name="info_compression_summary">Сжимает данные перед шифрованием — используется меньше LSB-бит, заметность ниже, помещаются файлы покрупнее.</string>
+    <string name="info_image_size_summary">Ограничивает длинную сторону перед внедрением. Чем больше картинка — тем выше ёмкость, но и PNG растёт быстро.</string>
+
+    <string name="enc_none_desc">Данные внедряются как есть, с заметной меткой — найти и извлечь их сможет любой.</string>
+    <string name="enc_aes_desc">Индустриальный стандарт, аппаратное ускорение на большинстве устройств.</string>
+    <string name="enc_chacha_desc">Современный шифр, эффективен без AES-ускорителя.</string>
+    <string name="enc_chacha_note">На Android доступен с API 28 (Android 9). Более ранние версии — через Tink/Conscrypt.</string>
+
+    <string name="comp_none_desc">Без сжатия — занимает больше LSB-бит.</string>
+    <string name="comp_zlib_desc">Универсальный, средние скорость и плотность.</string>
+    <string name="comp_lzfse_desc">Оптимизирован Apple: быстрее zlib, плотнее.</string>
+    <string name="comp_lzfse_note">Проприетарный формат Apple. На Android пока не поддерживается — сообщения с LZFSE с iOS открыть здесь нельзя.</string>
+    <string name="comp_lzma_desc">Максимальное сжатие, самый медленный.</string>
+    <string name="comp_lzma_note">На Android пока не поддерживается — нужна библиотека org.tukaani:xz.</string>
+
+    <string name="size_compact_desc">Малый файл (~1 МБ), скромная ёмкость (~170 КБ).</string>
+    <string name="size_standard_desc">Золотая середина: экспорт ~3–5 МБ, ёмкость ~700 КБ.</string>
+    <string name="size_large_desc">Тяжёлый файл (~10–15 МБ), ёмкость ~2,7 МБ.</string>
+    <string name="size_original_desc">Сохраняет исходное разрешение. Экспорт может дойти до 30–50 МБ.</string>
+
+    <string name="export_warning_title">Отправляйте как файл</string>
+    <string name="export_warning_body">Картинка сохранится как PNG-файл в Загрузки/Veilix. Отправляйте её файлом — почтой, через облако или как ZIP. Мессенджеры и соцсети пережимают фото и уничтожают скрытые данные.</string>
+    <string name="export_dont_show_again">Больше не показывать</string>
+    <string name="export_cancel">Отмена</string>
+    <string name="export_continue">Продолжить</string>
+
+    <!-- 1.1 -->
+    <string name="action_generate_password">Создать пароль</string>
+    <string name="action_share_zip">Отправить как ZIP</string>
+    <string name="field_repeat_password">Повторите пароль</string>
+    <string name="field_repeat_password_reason">Его нельзя будет восстановить, поэтому проверьте, нет ли опечатки.</string>
+    <string name="status_stealth_hint">Получили картинку со скрытым сообщением? Введите пароль и нажмите «Расшифровать».</string>
+    <string name="status_cannot_carry_data">Прячете своё сообщение? Продолжайте: результат сохранится в PNG. Но в полученной от кого-то картинке %1$s сообщения быть не может: его уничтожает сжатие, поэтому попросите отправить картинку файлом.</string>
+    <string name="status_save_password">Сохраните этот пароль в надёжном месте: без него сообщение не восстановить.</string>
+    <string name="status_secrets_cleared">Пароль и секретные данные очищены после бездействия.</string>
+    <string name="capacity_detectable">Большой объём легче обнаружить. Для лучшей скрытности возьмите картинку крупнее или спрячьте меньше.</string>
+    <string name="error_wrong_password_or_no_data">Неверный пароль, или в этой картинке нет скрытых данных. Картинки, отправленные через мессенджеры как фото, их теряют.</string>
+    <string name="error_passwords_dont_match">Пароли не совпадают. Данные не внедрены.</string>
+    <string name="export_zip_hint">Для мессенджеров: ZIP-файл доставляется как есть, без сжатия. Veilix открывает его напрямую.</string>
+</resources>

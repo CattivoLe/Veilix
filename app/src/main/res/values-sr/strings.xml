@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Veilix</string>
+
+    <string name="picker_choose">Изаберите слику</string>
+    <string name="picker_from_gallery">Фотографија из галерије</string>
+    <string name="picker_take_photo">Направи снимак</string>
+    <string name="picker_load_file">Учитај из фајлова</string>
+
+    <string name="settings_title">Подешавања</string>
+    <string name="settings_encryption">Шифровање</string>
+    <string name="settings_compression">Компресија</string>
+    <string name="settings_image_size">Величина слике</string>
+
+    <string name="enc_none">Без шифровања</string>
+    <string name="enc_aes">AES-256-GCM</string>
+    <string name="enc_chacha">ChaCha20-Poly1305</string>
+    <string name="comp_none">Без компресије</string>
+    <string name="comp_zlib">Zlib (Deflate)</string>
+    <string name="comp_lzfse">LZFSE</string>
+    <string name="comp_lzma">LZMA</string>
+    <string name="size_compact">Компактно (1024)</string>
+    <string name="size_standard">Стандардно (2048)</string>
+    <string name="size_large">Велико (4096)</string>
+    <string name="size_original">Оригинал</string>
+
+    <string name="field_password">Лозинка</string>
+    <string name="field_message">Унесите скривени текст</string>
+
+    <string name="action_embed_text">Угради текст</string>
+    <string name="action_embed_file">Угради фајл</string>
+    <string name="action_decrypt">Дешифруј</string>
+    <string name="action_export">Извезите слику</string>
+    <string name="action_attach">Приложи фајл</string>
+    <string name="action_save_file">Сачувај фајл</string>
+    <string name="action_show_password">Прикажи лозинку</string>
+    <string name="action_hide_password">Сакриј лозинку</string>
+    <string name="action_copy_password">Копирај лозинку</string>
+    <string name="action_copy_result">Копирај резултат</string>
+    <string name="action_clear_result">Очисти резултат</string>
+    <string name="action_clear_message">Очисти поруку</string>
+    <string name="action_remove_attachment">Уклони прилог</string>
+
+    <string name="status_processing">Обрада…</string>
+    <string name="status_analyzing">Анализа слике…</string>
+    <string name="status_embedding">Уграђивање података…</string>
+    <string name="status_extracting">Издвајање података…</string>
+    <string name="status_done_embedded">Готово. Подаци су уграђени.</string>
+    <string name="status_enter_password">Унесите лозинку и притисните „Дешифруј“.</string>
+    <string name="status_saved_to_gallery">Сачувано у галерију.</string>
+    <string name="status_saved_to_downloads">Сачувано у Преузимања/Veilix.</string>
+    <string name="status_hidden_detected">Откривени су скривени подаци</string>
+
+    <string name="result_label">Резултат:</string>
+
+    <string name="capacity_used">Заузето %1$s од %2$s</string>
+    <string name="capacity_exceeded">Капацитет премашен</string>
+    <string name="capacity_remaining_chars">≈ %1$d карактера преостало</string>
+
+    <string name="strength_weak">Слаба</string>
+    <string name="strength_fair">Осредња</string>
+    <string name="strength_strong">Јака</string>
+    <string name="strength_excellent">Одлична</string>
+
+    <string name="error_image_process">Обрада слике није успела</string>
+    <string name="error_message_too_large">Садржај је превелик за ову слику</string>
+    <string name="error_decode">Декодирање података није успело</string>
+    <string name="error_no_hidden_data">У слици нема скривених података</string>
+    <string name="error_header">Заглавље је оштећено</string>
+    <string name="error_unsupported_version">Неподржана верзија формата: %1$d</string>
+    <string name="error_unsupported_algorithm">Неподржан алгоритам</string>
+    <string name="error_wrong_password">Погрешна лозинка или су подаци оштећени</string>
+    <string name="error_password_required">Унесите лозинку или искључите шифровање</string>
+    <string name="error_compression">Компресија није успела</string>
+    <string name="error_decompression">Декомпресија није успела</string>
+    <string name="error_encryption">Шифровање података није успело</string>
+    <string name="error_empty">Нема шта уградити</string>
+    <string name="error_png_export">Слика се не може припремити за извоз</string>
+    <string name="error_camera_denied">Приступ камери је онемогућен. Омогућите га у Подешавањима.</string>
+    <string name="error_lockout">Превише покушаја. Сачекајте %1$s.</string>
+
+    <string name="info_more">Више информација</string>
+    <string name="info_close">Затвори</string>
+    <string name="info_encryption_summary">Штити скривене податке од читања без лозинке. Без ње, свако ко отвори слику у Veilix-у може извући садржај.</string>
+    <string name="info_compression_summary">Скупља податке пре шифровања — користи се мање LSB битова, мање је уочљиво, стане већи фајл.</string>
+    <string name="info_image_size_summary">Ограничава дужу страну пре уграђивања. Веће слике носе више, али извезени PNG нагло расте.</string>
+
+    <string name="enc_none_desc">Подаци се уграђују какви јесу, са видљивом ознаком — свако их може пронаћи и извући.</string>
+    <string name="enc_aes_desc">Индустријски стандард, хардверско убрзање на већини уређаја.</string>
+    <string name="enc_chacha_desc">Модеран шифар, ефикасан и без AES хардвера.</string>
+    <string name="enc_chacha_note">На Android-у доступан од API 28 (Android 9). Раније верзије — преко Tink/Conscrypt-а.</string>
+
+    <string name="comp_none_desc">Без компресије — користи више LSB битова.</string>
+    <string name="comp_zlib_desc">Универзалан, балансиран по брзини и густини.</string>
+    <string name="comp_lzfse_desc">Оптимизован од Apple-а: бржи од zlib-а, гушћи.</string>
+    <string name="comp_lzfse_note">Власнички Apple формат. На Android-у још није подржан — поруке са LZFSE из iOS-а се овде не могу отворити.</string>
+    <string name="comp_lzma_desc">Максимална компресија, најспорији.</string>
+    <string name="comp_lzma_note">На Android-у још није подржан — потребна је библиотека org.tukaani:xz.</string>
+
+    <string name="size_compact_desc">Мали извоз (~1 MB), скромни капацитет (~170 KB).</string>
+    <string name="size_standard_desc">Златна средина: извоз ~3–5 MB, капацитет ~700 KB.</string>
+    <string name="size_large_desc">Тежи извоз (~10–15 MB), капацитет ~2,7 MB.</string>
+    <string name="size_original_desc">Чува изворну резолуцију. Извоз може порасти на 30–50 MB.</string>
+
+    <string name="export_warning_title">Шаљите као фајл</string>
+    <string name="export_warning_body">Слика се чува као PNG датотека у Преузимања/Veilix. Пошаљите је као датотеку — имејлом, преко облака или као ZIP. Апликације за поруке и друштвене мреже препакују фотографије и уништавају скривене податке.</string>
+    <string name="export_dont_show_again">Не приказуј поново</string>
+    <string name="export_cancel">Откажи</string>
+    <string name="export_continue">Настави</string>
+
+    <!-- 1.1 -->
+    <string name="action_generate_password">Генериши лозинку</string>
+    <string name="action_share_zip">Пошаљи као ZIP</string>
+    <string name="field_repeat_password">Поновите лозинку</string>
+    <string name="field_repeat_password_reason">Не може се касније вратити, па проверите да нема грешке у куцању.</string>
+    <string name="status_stealth_hint">Добили сте слику са скривеном поруком? Унесите лозинку и притисните „Дешифруј“.</string>
+    <string name="status_cannot_carry_data">Кријете своју поруку? Наставите: резултат се чува као PNG. Али у %1$s слици коју сте од некога добили порука не може да постоји: компресија је уништава, па замолите да вам пошаљу слику као датотеку.</string>
+    <string name="status_save_password">Сачувајте ову лозинку на сигурном месту: без ње се порука не може вратити.</string>
+    <string name="status_secrets_cleared">Лозинка и тајни подаци су обрисани након неактивности.</string>
+    <string name="capacity_detectable">Велику количину података је лакше открити. За бољу скривеност узмите већу слику или сакријте мање.</string>
+    <string name="error_wrong_password_or_no_data">Погрешна лозинка или на овој слици нема скривених података. Слике послате као фотографије преко апликација за поруке их губе.</string>
+    <string name="error_passwords_dont_match">Лозинке се не поклапају. Подаци нису уграђени.</string>
+    <string name="export_zip_hint">За апликације за поруке: ZIP датотека стиже непромењена, без компресије. Veilix је отвара директно.</string>
+</resources>

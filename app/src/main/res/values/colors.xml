@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Brand colours referenced from themes.xml — must stay in sync with
+      `cattivole.veilix.ui.theme.BrandColors` (Kotlin side).
+    -->
+    <color name="veilix_bg_top">#14093A</color>
+    <color name="veilix_bg_bottom">#08031A</color>
+    <color name="veilix_surface">#1F123D</color>
+    <color name="veilix_violet">#8A47D6</color>
+    <color name="veilix_cyan">#5DD2E8</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
