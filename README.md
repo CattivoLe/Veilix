@@ -37,12 +37,16 @@ it.
 Get the APK from [**Releases**](../../releases/latest). It needs Android 10 or
 newer.
 
-Each release lists the SHA-256 of the APK. The signing certificate fingerprint
-is:
+Each release lists the SHA-256 of the APK. Every release is signed with the
+same certificate:
 
 ```
-SHA-256: <fill in after the first signed release>
+SHA-256: 05:7F:A8:AD:9B:96:99:DE:4C:03:23:73:83:7D:9B:B5:80:12:FC:BF:FA:8C:EE:3F:40:E9:98:6E:8A:62:E2:64
 ```
+
+To check a downloaded APK, run
+`apksigner verify --print-certs Veilix-<version>.apk` and compare the
+`SHA-256 digest` line. It's the same value, written in lowercase without colons.
 
 To get updates automatically, add this repository to
 [Obtainium](https://github.com/ImranR98/Obtainium).
